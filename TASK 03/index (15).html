@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music App UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>🎵 MUSIC</h2>
+      <nav>
+        <ul>
+          <li class="active">Home</li>
+          <li>Browse</li>
+          <li>Radio</li>
+          <li>Podcasts</li>
+          <li>Library</li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <input type="text" placeholder="Search music..." />
+        <div class="user">👤</div>
+      </header>
+
+      <!-- Popular Albums -->
+      <section class="section">
+        <h3>Popular Albums</h3>
+        <div class="cards">
+          <div class="card"><img src="https://m.media-amazon.com/images/S/pv-target-images/c9329ec90c12199b0bac1f998dbf568aac1256fe902a27694c1dab3447de5bb8.jpg" alt="Album 1" /><p>Album 1</p></div>
+          <div class="card"><img src="https://play-lh.googleusercontent.com/7svbeOEKUWCfUUQWOt_9EfXahxbaWS8mSZYSlxW12FbzSV0OS0G8B7zdhg9Ro9MOCiyU1BYwaRaOlkCESss" alt="Album 2" /><p>Album 2</p></div>
+          <div class="card"><img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/varanam-aayiram-edited-version-et00002204-15-02-2021-02-51-33.jpg" alt="Album 3" /><p>Album 3</p></div>
+          <div class="card"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlSHm_zkiC1jVBECYN7usgEb6mfkVcQma3zr2vr88OMDQaEj4Mkn8n_nOQi_ioI2HvDLGcTKj-zfXjcJlGRNDY9QiXfqupyyMvSLXoxg" alt="Album 4" /><p>Album 4</p></div>
+        </div>
+      </section>
+
+      <!-- Picked For You -->
+      <section class="section">
+        <h3>Picked for You</h3>
+        <div class="picked">
+          <img src="https://m.media-amazon.com/images/I/5153os2C+hL.UXNaN_FMjpg_QL85.jpg" alt="Chill Tamil Beats" />
+          <div>
+            <h4>Chill Tamil Beats</h4>
+            <p>Recommended based on your listening</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Artists -->
+      <section class="section">
+        <h3>Popular Artists</h3>
+        <div class="cards">
+          <div class="card"><img src="https://m.media-amazon.com/images/I/61LZqmgklyL.UF1000,1000_QL80.jpg" alt="Artist 1" /><p>Artist 1</p></div>
+          <div class="card"><img src="https://static.toiimg.com/thumb/imgsize-23456,msid-115474560,width-600,resizemode-4/115474560.jpg" alt="Artist 2" /><p>Artist 2</p></div>
+          <div class="card"><img src="https://www.behindwoods.com/tamil-movies-cinema-news-16/images/harris-jayaraj-celebrates-his-birthday-today-january-8-2017-photos-pictures-stills.jpg" alt="Artist 3" /><p>Artist 3</p></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Player Bar -->
+    <footer class="player-bar">
+  <div class="song-info">
+    <img id="currentCover" src="" alt="Cover" />
+    <div>
+      <strong id="songTitle">Title</strong><br />
+      <small id="songArtist">Artist</small>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="prev">⏮</button>
+    <button id="playPause">▶</button>
+    <button id="next">⏭</button>
+  </div>
+
+ 
+
+
+
+
+  <audio id="audio"></audio>
+</footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
